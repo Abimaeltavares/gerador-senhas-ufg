@@ -32,3 +32,13 @@ com uv, sem exigir mudança da política de scripts nem instalação global.
 Criados escopo, arquitetura mínima, instruções do agente e exclusões do Git.
 A IA elaborou esses arquivos a partir do pedido; o autor escolheu o projeto e
 autorizou a execução. Resultados de testes serão registrados após sua execução.
+
+## Etapa 3 — TDD Red do núcleo
+
+Escritos 41 casos de teste antes da implementação. O núcleo inicial declarava
+apenas o contrato e levantava NotImplementedError. Executado:
+`.venv\Scripts\python.exe -m pytest -q`.
+Resultado real: 41 falhas. As falhas eram esperadas: ausência de implementação
+e ausência de secrets no módulo ainda vazio. Não se confundiram com aprovação.
+Os testes verificam as 16 combinações de seleção, limites, erros, variação
+observada e chamadas a secrets.choice/secrets.randbelow.
