@@ -42,3 +42,11 @@ Resultado real: 41 falhas. As falhas eram esperadas: ausência de implementaçã
 e ausência de secrets no módulo ainda vazio. Não se confundiram com aprovação.
 Os testes verificam as 16 combinações de seleção, limites, erros, variação
 observada e chamadas a secrets.choice/secrets.randbelow.
+
+## Etapa 4 — TDD Green do núcleo
+
+Implementados seleção de categorias, validação de tamanho, preenchimento com
+secrets.choice e Fisher–Yates com secrets.randbelow. Mesmo comando anterior:
+41 testes aprovados em execução real. O núcleo não imprime nem salva senhas.
+A revisão do código confirmou ausência de random comum e uso exclusivo de
+secrets para escolhas de caracteres e índices aleatórios.
