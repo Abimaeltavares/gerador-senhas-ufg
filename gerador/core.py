@@ -48,7 +48,12 @@ def gerar_senha(
     caracteres = [secrets.choice(grupo) for grupo in categorias]
     alfabeto = "".join(categorias)
     caracteres.extend(secrets.choice(alfabeto) for _ in range(tamanho - len(categorias)))
+    _embaralhar(caracteres)
+    return "".join(caracteres)
+
+
+def _embaralhar(caracteres: list[str]) -> None:
+    """Aplicar Fisher–Yates in-place usando uma fonte criptográfica."""
     for indice in range(len(caracteres) - 1, 0, -1):
         destino = secrets.randbelow(indice + 1)
         caracteres[indice], caracteres[destino] = caracteres[destino], caracteres[indice]
-    return "".join(caracteres)

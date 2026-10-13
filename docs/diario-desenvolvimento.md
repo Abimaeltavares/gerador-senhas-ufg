@@ -50,3 +50,10 @@ secrets.choice e Fisher–Yates com secrets.randbelow. Mesmo comando anterior:
 41 testes aprovados em execução real. O núcleo não imprime nem salva senhas.
 A revisão do código confirmou ausência de random comum e uso exclusivo de
 secrets para escolhas de caracteres e índices aleatórios.
+
+## Etapa 5 — Refactor do núcleo
+
+Extraído o Fisher–Yates para _embaralhar, com responsabilidade e docstring
+próprias. Os 41 testes existentes passaram novamente, sem mudança de contrato.
+O ciclo Red → Green → Refactor foi observado no núcleo; não se afirma que
+cada arquivo ou teste posterior foi produzido por TDD.
