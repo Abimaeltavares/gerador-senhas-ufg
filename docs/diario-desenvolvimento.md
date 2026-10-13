@@ -68,3 +68,22 @@ Executado `.venv\Scripts\python.exe -m pytest -q`: 61 testes aprovados.
 Nenhuma senha dos subprocessos foi salva em arquivo ou incluída neste diário.
 Preparados iniciar.cmd (sem scripts PowerShell) e workflow Windows/Linux,
 Python 3.11/3.12. O workflow ainda não foi executado no GitHub.
+
+## Etapa 7 — documentação e revisão
+
+Criados README, licença MIT, notas da versão e rascunho de fórum. A documentação
+explica instalação sem depender de Activate.ps1, seleção das categorias,
+códigos de saída e limitações. Consultadas as referências oficiais de secrets
+e argparse; confirmado que secrets é adequado para senhas.
+A revisão reconhece que o algoritmo não promete distribuição uniforme entre
+todas as senhas válidas e que tamanho curto não implica senha forte.
+O pedido foi analisado com elementos CO-STAR, sem inventar um prompt enviado.
+Teste em Python 3.11.17: 61 aprovados. Em Python 3.12.15: 61 aprovados.
+A primeira verificação automatizada de make install falhou: o verificador
+estava usando o executável da própria .venv que seria recriada. No Windows,
+o executável em uso impede essa operação. A execução direta funcionou; o
+verificador foi executado novamente com Python-base, fora do ambiente virtual.
+GNU Make 4.4.1 local: make install, make test e make run aprovados.
+iniciar.cmd foi executado com tamanho 12, maiúsculas e números: aprovado.
+As saídas de senha desses comandos foram capturadas apenas em memória e
+omitidas dos relatórios. pip check não encontrou dependências incompatíveis.
