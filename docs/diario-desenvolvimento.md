@@ -57,3 +57,14 @@ Extraído o Fisher–Yates para _embaralhar, com responsabilidade e docstring
 próprias. Os 41 testes existentes passaram novamente, sem mudança de contrato.
 O ciclo Red → Green → Refactor foi observado no núcleo; não se afirma que
 cada arquivo ou teste posterior foi produzido por TDD.
+
+## Etapa 6 — CLI e testes de integração
+
+Adicionada main.py com argparse, ajuda, exemplos, erro em português e código de
+saída 2 para argumentos inválidos. A saída de sucesso contém somente a senha.
+Adicionados 20 testes reais de subprocesso, cobrindo todos os exemplos pedidos,
+limites, seleção única, erros, ajuda e execução a partir de outra pasta.
+Executado `.venv\Scripts\python.exe -m pytest -q`: 61 testes aprovados.
+Nenhuma senha dos subprocessos foi salva em arquivo ou incluída neste diário.
+Preparados iniciar.cmd (sem scripts PowerShell) e workflow Windows/Linux,
+Python 3.11/3.12. O workflow ainda não foi executado no GitHub.
