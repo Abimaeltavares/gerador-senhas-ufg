@@ -87,3 +87,12 @@ GNU Make 4.4.1 local: make install, make test e make run aprovados.
 iniciar.cmd foi executado com tamanho 12, maiúsculas e números: aprovado.
 As saídas de senha desses comandos foram capturadas apenas em memória e
 omitidas dos relatórios. pip check não encontrou dependências incompatíveis.
+
+## Etapa 8 — preparação da entrega
+
+Preparado o relatório VALIDACAO.md, com resultados locais e pendências externas.
+O histórico será encerrado com sete commits e tag local v1.0.0. Uma cópia ZIP
+é criada apenas dos arquivos versionados. A publicação e a Release não foram
+realizadas: o pedido original exige aprovação do autor antes dessas ações.
+O acesso ao GitHub funciona no contexto do Windows, mas falhou no ambiente
+isolado; nenhum token foi copiado para o projeto.
