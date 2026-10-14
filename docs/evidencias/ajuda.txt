@@ -1,0 +1,24 @@
+Saída real de execução, 14/10/2026.
+$ python main.py --help
+
+uso: main.py [-h] [--tamanho N] [--minusculas] [--maiusculas] [--numeros]
+               [--simbolos]
+
+Gere senhas aleatórias com uma fonte criptograficamente segura.
+
+opções:
+  -h, --help    mostrar esta ajuda e sair
+  --tamanho N   tamanho de 1 a 128, suficiente para as categorias (padrão: 16)
+  --minusculas  incluir letras minúsculas (a-z)
+  --maiusculas  incluir letras maiúsculas (A-Z)
+  --numeros     incluir números (0-9)
+  --simbolos    incluir símbolos ASCII
+
+Exemplos:
+  python main.py
+  python main.py --tamanho 20
+  python main.py --tamanho 12 --maiusculas --numeros
+  python main.py --tamanho 16 --minusculas --maiusculas --numeros --simbolos
+Sem categorias explícitas, são utilizadas todas as quatro categorias.
+
+Código de saída: 0

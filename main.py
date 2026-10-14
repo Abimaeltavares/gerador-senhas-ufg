@@ -57,7 +57,10 @@ def criar_parser() -> argparse.ArgumentParser:
     parser._optionals.title = "opções"
     parser.add_argument("-h", "--help", action="help", help="mostrar esta ajuda e sair")
     parser.add_argument(
-        "--tamanho", type=_inteiro, default=16, metavar="N",
+        "--tamanho",
+        type=_inteiro,
+        default=16,
+        metavar="N",
         help="tamanho de 1 a 128, suficiente para as categorias (padrão: 16)",
     )
     parser.add_argument("--minusculas", action="store_true", help="incluir letras minúsculas (a-z)")

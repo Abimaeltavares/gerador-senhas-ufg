@@ -11,9 +11,9 @@ CATEGORIAS = (string.ascii_lowercase, string.ascii_uppercase, string.digits, str
 
 @pytest.mark.parametrize("selecao", list(product((False, True), repeat=4)))
 def test_categorias_e_alfabeto_permitido(selecao):
-    categorias = [grupo for grupo, ativa in zip(CATEGORIAS, selecao) if ativa]
+    categorias = [grupo for grupo, ativa in zip(CATEGORIAS, selecao, strict=True) if ativa]
     categorias = categorias or list(CATEGORIAS)
-    senha = gerar_senha(20, **dict(zip(OPCOES, selecao)))
+    senha = gerar_senha(20, **dict(zip(OPCOES, selecao, strict=True)))
     assert len(senha) == 20
     assert set(senha) <= set("".join(categorias))
     assert all(any(caractere in grupo for caractere in senha) for grupo in categorias)
@@ -47,8 +47,11 @@ def test_rejeita_tamanho_que_nao_e_inteiro(tamanho):
 
 @pytest.mark.parametrize(
     "tamanho,opcoes",
-    [(3, {}), (1, {"minusculas": True, "numeros": True}),
-     (2, {"minusculas": True, "maiusculas": True, "simbolos": True})],
+    [
+        (3, {}),
+        (1, {"minusculas": True, "numeros": True}),
+        (2, {"minusculas": True, "maiusculas": True, "simbolos": True}),
+    ],
 )
 def test_rejeita_tamanho_insuficiente_para_categorias(tamanho, opcoes):
     with pytest.raises(ValueError, match="categorias selecionadas"):

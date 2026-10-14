@@ -1,0 +1,8 @@
+Saída real de execução, 14/10/2026.
+$ python main.py --tamanho 20
+
+[senha omitida antes de salvar o relatório]
+Verificação em memória: 20 caracteres.
+Categorias presentes: minúsculas, maiúsculas, números e símbolos.
+
+Código de saída: 0

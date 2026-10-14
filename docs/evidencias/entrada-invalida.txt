@@ -1,0 +1,8 @@
+Saída real de execução, 14/10/2026.
+$ python main.py --tamanho 3
+
+uso: main.py [-h] [--tamanho N] [--minusculas] [--maiusculas] [--numeros]
+               [--simbolos]
+erro: O tamanho deve ser pelo menos 4 para incluir todas as categorias selecionadas.
+
+Código de saída: 2

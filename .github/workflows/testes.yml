@@ -15,4 +15,8 @@ jobs:
         with:
           python-version: ${{ matrix.python }}
       - run: python -m pip install -r requirements.txt
+      - name: Estilo e formatacao
+        run: |
+          python -m ruff check .
+          python -m ruff format --check .
       - run: python -m pytest -q

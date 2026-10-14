@@ -107,3 +107,45 @@ O workflow executou quatro jobs em Windows/Ubuntu e Python 3.11/3.12;
 todos foram aprovados. Evidência: https://github.com/Abimaeltavares/gerador-senhas-ufg/actions/runs/38488310328.
 Um oitavo commit atualiza README, validação e diário com links
 e resultados reais. O código executável permanece o mesmo da tag validada.
+
+## Etapa 10 — sincronização dos artefatos de entrega
+
+Em 14 de outubro de 2026, o autor solicitou atualizar os documentos antigos
+ainda presentes nos downloads da versão. A tag v1.0.0 e o pacote ZIP da
+Release foram sincronizados com a documentação atual. O código executável
+e os testes não foram alterados. O histórico de commits foi preservado.
+A listagem do pacote e a referência remota da tag são conferidas após a atualização.
+
+## Etapa 11 — complementação da validação e documentação
+
+Em 14 de outubro de 2026, após analisar as imagens do curso, o autor pediu
+“quais alterações precisa fazer ?” e autorizou o plano com “bora fazer”.
+Foram adicionados Ruff 0.17.0, make lint e verificação de estilo no workflow.
+Os ajustes de código se limitaram a formatação; os testes passaram a usar
+zip(strict=True) para explicitar o pareamento de quatro categorias.
+
+Uma tentativa inicial de consultar versões usou um subcomando indisponível
+no uv instalado. Ruff foi instalado e sua versão efetiva foi fixada.
+A primeira revisão do Ruff usou regras herdadas do ambiente e sugeriu alterar
+o tipo de exceção de uma validação. Foi definida uma configuração explícita
+para o projeto, preservando ValueError conforme o contrato já testado.
+Os apontamentos de formatação e pareamento de sequências foram corrigidos.
+
+make lint passou. Uma execução isolada teve 60 testes aprovados e um erro
+de permissão na pasta temporária do Windows. A execução no contexto do usuário
+teve 61 aprovados. A suíte também teve 61 aprovados em Python 3.11.17.
+
+O README ganhou trechos literais do pedido original, efeitos das decisões,
+relato de dificuldades reais e justificativas de arquitetura/SRP/DRY.
+Não foram inventadas métricas de produtividade nem novos prompts.
+
+A tentativa de captura no navegador foi encerrada pela ferramenta por não
+conseguir determinar a URL atual com segurança. A automação de interface foi
+interrompida. Foram produzidos relatórios visuais a partir de stdout/stderr
+reais, identificados explicitamente como renderizações, não como screenshots
+nativos. A senha foi omitida antes de salvar qualquer evidência.
+Capturas nativas da CLI e dos testes permanecem pendentes.
+
+Para manter dez commits, esta finalização é reunida no último commit da entrega.
+A atualização mantém o histórico de desenvolvimento anterior, sem inventar TDD.
+A tag v1.0.0 e os pacotes devem acompanhar o estado validado após a publicação.

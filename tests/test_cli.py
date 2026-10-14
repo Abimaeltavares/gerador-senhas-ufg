@@ -12,24 +12,39 @@ ROOT = Path(__file__).resolve().parents[1]
 def executar(*argumentos):
     return subprocess.run(
         [sys.executable, str(ROOT / "main.py"), *argumentos],
-        capture_output=True, text=True, encoding="utf-8",
+        capture_output=True,
+        text=True,
+        encoding="utf-8",
         env={**os.environ, "PYTHONUTF8": "1"},
-        cwd=ROOT, timeout=10, check=False,
+        cwd=ROOT,
+        timeout=10,
+        check=False,
     )
 
 
 @pytest.mark.parametrize(
     "argumentos,tamanho,grupos",
     [
-        ([], 16, [string.ascii_lowercase, string.ascii_uppercase,
-                  string.digits, string.punctuation]),
-        (["--tamanho", "20"], 20, [string.ascii_lowercase, string.ascii_uppercase,
-                                 string.digits, string.punctuation]),
-        (["--tamanho", "12", "--maiusculas", "--numeros"],
-         12, [string.ascii_uppercase, string.digits]),
-        (["--tamanho", "16", "--minusculas", "--maiusculas", "--numeros", "--simbolos"],
-         16, [string.ascii_lowercase, string.ascii_uppercase,
-              string.digits, string.punctuation]),
+        (
+            [],
+            16,
+            [string.ascii_lowercase, string.ascii_uppercase, string.digits, string.punctuation],
+        ),
+        (
+            ["--tamanho", "20"],
+            20,
+            [string.ascii_lowercase, string.ascii_uppercase, string.digits, string.punctuation],
+        ),
+        (
+            ["--tamanho", "12", "--maiusculas", "--numeros"],
+            12,
+            [string.ascii_uppercase, string.digits],
+        ),
+        (
+            ["--tamanho", "16", "--minusculas", "--maiusculas", "--numeros", "--simbolos"],
+            16,
+            [string.ascii_lowercase, string.ascii_uppercase, string.digits, string.punctuation],
+        ),
         (["--tamanho", "1", "--numeros"], 1, [string.digits]),
         (["--tamanho", "128", "--simbolos"], 128, [string.punctuation]),
     ],
@@ -85,9 +100,13 @@ def test_ajuda_em_portugues(opcao):
 def test_cli_funciona_fora_da_pasta_do_projeto(tmp_path):
     resultado = subprocess.run(
         [sys.executable, str(ROOT / "main.py"), "--tamanho", "8", "--numeros"],
-        capture_output=True, text=True, encoding="utf-8",
+        capture_output=True,
+        text=True,
+        encoding="utf-8",
         env={**os.environ, "PYTHONUTF8": "1"},
-        cwd=tmp_path, timeout=10, check=False,
+        cwd=tmp_path,
+        timeout=10,
+        check=False,
     )
     assert resultado.returncode == 0
     assert len(resultado.stdout.rstrip("\n")) == 8

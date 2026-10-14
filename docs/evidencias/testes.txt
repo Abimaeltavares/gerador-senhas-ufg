@@ -1,0 +1,24 @@
+Saída real de execução, 14/10/2026.
+$ make lint
+
+".venv/Scripts/python.exe" -m ruff check .
+All checks passed!
+".venv/Scripts/python.exe" -m ruff format --check .
+10 files already formatted
+
+$ make test
+
+".venv/Scripts/python.exe" -m pytest
+============================= test session starts =============================
+platform win32 -- Python 3.12.15, pytest-9.1.1, pluggy-1.6.0
+rootdir: C:\Programa da pós\gerador-senhas-ufg
+configfile: pyproject.toml
+testpaths: tests
+collected 61 items
+
+tests\test_cli.py ....................                                   [ 32%]
+tests\test_core.py .........................................             [100%]
+
+============================= 61 passed in 6.86s ==============================
+
+Código de saída: 0

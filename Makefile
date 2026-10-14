@@ -1,4 +1,4 @@
-.PHONY: install test run
+.PHONY: install test run lint
 ifeq ($(OS),Windows_NT)
 PYTHON ?= python
 VENV_PYTHON = .venv/Scripts/python.exe
@@ -16,3 +16,7 @@ test:
 
 run:
 	"$(VENV_PYTHON)" main.py
+
+lint:
+	"$(VENV_PYTHON)" -m ruff check .
+	"$(VENV_PYTHON)" -m ruff format --check .
