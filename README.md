@@ -106,10 +106,9 @@ execute diretamente `main.py` como no primeiro exemplo.
 
 ## Instalação em outra máquina Windows
 
-Após a publicação, o endereço planejado do repositório será
-`https://github.com/Abimaeltavares/gerador-senhas-ufg`.
-O projeto ainda não deve ser tratado como publicado enquanto a aprovação
-e a publicação não forem confirmadas.
+Repositório público: [https://github.com/Abimaeltavares/gerador-senhas-ufg](https://github.com/Abimaeltavares/gerador-senhas-ufg).
+[Release v1.0.0](https://github.com/Abimaeltavares/gerador-senhas-ufg/releases/tag/v1.0.0).
+O acesso às páginas foi confirmado sem autenticação.
 
 Com Python instalado e disponível pelo launcher `py`:
 
@@ -203,8 +202,9 @@ O ciclo Red → Green → Refactor do núcleo foi executado e registrado no
 [diário](docs/diario-desenvolvimento.md). Os resultados finais e versões
 verificadas constam em [VALIDACAO.md](docs/VALIDACAO.md).
 
-O workflow preparado para GitHub Actions cobre Windows/Ubuntu e Python 3.11/3.12.
-Sua preparação não significa que já foi executado no serviço.
+O GitHub Actions executou os 61 testes em Windows e Ubuntu, com Python
+3.11 e 3.12. As quatro combinações foram aprovadas.
+[Execução verificada](https://github.com/Abimaeltavares/gerador-senhas-ufg/actions/runs/38488310328).
 
 ## IA generativa no ciclo de vida
 

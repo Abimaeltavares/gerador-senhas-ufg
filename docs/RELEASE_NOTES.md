@@ -9,4 +9,9 @@
 A geração funciona sem dependências externas, rede ou armazenamento de senhas.
 pytest é necessário somente para executar os testes.
 
-A publicação no GitHub e a Release dependem de aprovação do autor.
+Publicado com aprovação do autor.
+Os quatro jobs do GitHub Actions foram aprovados em Windows/Ubuntu,
+Python 3.11/3.12.
+
+Repositório: https://github.com/Abimaeltavares/gerador-senhas-ufg
+Evidência: https://github.com/Abimaeltavares/gerador-senhas-ufg/actions/runs/38488310328

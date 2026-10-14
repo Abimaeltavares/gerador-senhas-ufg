@@ -38,21 +38,28 @@ salvas em relatórios.
 - [x] LICENSE, README, AGENTS.md, dependências fixadas e Makefile presentes.
 - [x] Diário com resultados reais e etapas Red → Green → Refactor.
 - [x] Rascunho de fórum sem link de publicação fictício.
-- [x] Histórico real de sete commits significativos em Conventional Commits.
+- [x] Histórico real de oito commits significativos em Conventional Commits.
 - [x] Tag local v1.0.0 preparada após as verificações.
 - [x] Ambiente virtual, ferramentas, caches e arquivos sensíveis excluídos do Git.
 
-## Pendências externas
+## Publicação e pendências externas
 
-- [ ] Aprovação do autor para publicação.
-- [ ] Criar repositório público gerador-senhas-ufg e enviar commits/tag.
-- [ ] Criar Release v1.0.0 e confirmar README renderizado e acesso sem login.
-- [ ] Executar e conferir GitHub Actions. O workflow está preparado,
-  mas não foi executado no serviço.
-- [ ] Preencher o link real no rascunho do fórum após publicação.
+- [x] Aprovação do autor para publicação: resposta “sim” nesta sessão.
+- [x] Repositório público criado, commits e tag enviados.
+- [x] Release v1.0.0 publicada; páginas acessíveis sem autenticação.
+  README renderizado confirmado pelo HTML servido pelo GitHub, com tabelas.
+- [x] GitHub Actions: quatro jobs aprovados, Windows/Ubuntu e Python 3.11/3.12.
+  [Evidência](https://github.com/Abimaeltavares/gerador-senhas-ufg/actions/runs/38488310328).
+- [x] Link real preenchido no rascunho do fórum.
 - [ ] Revisão humana e compreensão do código pelo autor.
 - [ ] Autor submeter no fórum e comentar o trabalho de um colega.
 
 Não houve teste local em Linux nem em outras versões de Python.
 Não foram produzidas métricas de produtividade, análise de entropia ou
 afirmações de auditoria humana concluída.
+
+Repositório: https://github.com/Abimaeltavares/gerador-senhas-ufg
+Release: https://github.com/Abimaeltavares/gerador-senhas-ufg/releases/tag/v1.0.0
+
+A tag v1.0.0 identifica o código validado. O commit posterior atualiza
+apenas a documentação com as evidências da publicação.

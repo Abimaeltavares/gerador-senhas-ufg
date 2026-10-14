@@ -1,7 +1,7 @@
 # Rascunho para o fórum avaliativo
 
-Antes de enviar, publicar o projeto com aprovação do autor, preencher o link
-e revisar o texto com suas próprias palavras. Não postar automaticamente.
+Projeto publicado com aprovação do autor. Antes de enviar, revisar o texto
+com suas próprias palavras. Não postar automaticamente.
 
 ## Texto sugerido
 
@@ -11,13 +11,14 @@ minúsculas, maiúsculas, números e símbolos. Quando nenhuma categoria é indi
 todas são usadas. A geração utiliza secrets e garante pelo menos um caractere
 de cada categoria escolhida.
 
-Repositório público: **[PREENCHER APÓS PUBLICAÇÃO]**.
+Repositório público: [gerador-senhas-ufg](https://github.com/Abimaeltavares/gerador-senhas-ufg).
 
 Utilizei o Codex como apoio ao planejamento, à criação de testes, à implementação,
 à refatoração e à documentação. Eu defini os requisitos e autorizei o desenvolvimento.
 O núcleo foi trabalhado em um ciclo Red → Green → Refactor, com as falhas iniciais
 e as execuções seguintes registradas no diário. Ao final, os 61 testes passaram
-nas versões de Python informadas no relatório de validação.
+localmente em Python 3.11 e 3.12. Os testes também passaram nas quatro
+combinações de Windows/Ubuntu e Python 3.11/3.12 no GitHub Actions.
 
 Uma dificuldade concreta foi que Python não estava disponível no ambiente
 inspecionado. Ele foi preparado em uma pasta local do projeto, com um ambiente
@@ -33,7 +34,7 @@ observada em algumas execuções não foi tratada como prova de segurança.
 
 ## Antes da submissão
 
-- Confirmar o link público, a renderização do README e a Release.
+- Link público, README renderizado e Release já foram confirmados.
 - Ler e compreender o código; ajustar o texto para refletir sua revisão.
 - Enviar pelo fórum indicado no curso.
 - Comentar o trabalho real de pelo menos um colega após lê-lo. Esse comentário

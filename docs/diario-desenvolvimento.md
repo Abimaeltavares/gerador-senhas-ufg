@@ -96,3 +96,20 @@ O histórico será encerrado com sete commits e tag local v1.0.0. Uma cópia ZIP
 realizadas: o pedido original exige aprovação do autor antes dessas ações.
 O acesso ao GitHub funciona no contexto do Windows, mas falhou no ambiente
 isolado; nenhum token foi copiado para o projeto.
+
+## Etapa 9 — publicação aprovada
+
+O autor respondeu “sim” à pergunta específica sobre publicar no GitHub e
+criar a Release. Criado o repositório público gerador-senhas-ufg, enviados
+os sete commits iniciais e a tag v1.0.0, criada a Release com as notas.
+Nenhuma tag foi movida ou histórico reescrito.
+
+Acesso público confirmado com requisições sem credenciais: páginas do
+repositório e da Release retornaram sucesso. O HTML do GitHub contém
+README renderizado e tabelas.
+
+O workflow executou quatro jobs em Windows/Ubuntu e Python 3.11/3.12;
+todos foram aprovados. Evidência: https://github.com/Abimaeltavares/gerador-senhas-ufg/actions/runs/38488310328.
+Um oitavo commit atualiza README, validação, diário e postagem com links
+e resultados reais. O código executável permanece o mesmo da tag validada.
+A submissão no fórum e o comentário em trabalho de colega não foram realizados.
