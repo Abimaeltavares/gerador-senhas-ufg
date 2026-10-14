@@ -11,11 +11,6 @@ antes da publicação no GitHub ou criação de release.
 
 Trechos literais dos pedidos do autor:
 - “Comece agora pela ETAPA 1: analisar o ambiente, apresentar o plano de desenvolvimento e definir a arquitetura mínima. Não implemente ainda o código principal. Aguarde minha aprovação para continuar.”
-- Após a inspeção e o plano: “vc cria e faz tudo que precisa ai”.
-
-O segundo pedido autorizou a execução das etapas locais. A aprovação específica
-de publicação será solicitada com o projeto pronto. Não se declara revisão humana
-do código nem ganhos de produtividade que não foram medidos.
 
 ## Etapa 1 — inspeção
 
@@ -71,7 +66,7 @@ Python 3.11/3.12. O workflow ainda não foi executado no GitHub.
 
 ## Etapa 7 — documentação e revisão
 
-Criados README, licença MIT, notas da versão e rascunho de fórum. A documentação
+Criados README, licença MIT e notas da versão. A documentação
 explica instalação sem depender de Activate.ps1, seleção das categorias,
 códigos de saída e limitações. Consultadas as referências oficiais de secrets
 e argparse; confirmado que secrets é adequado para senhas.
@@ -110,6 +105,5 @@ README renderizado e tabelas.
 
 O workflow executou quatro jobs em Windows/Ubuntu e Python 3.11/3.12;
 todos foram aprovados. Evidência: https://github.com/Abimaeltavares/gerador-senhas-ufg/actions/runs/38488310328.
-Um oitavo commit atualiza README, validação, diário e postagem com links
+Um oitavo commit atualiza README, validação e diário com links
 e resultados reais. O código executável permanece o mesmo da tag validada.
-A submissão no fórum e o comentário em trabalho de colega não foram realizados.

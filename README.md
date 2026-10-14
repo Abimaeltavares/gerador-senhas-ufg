@@ -64,7 +64,6 @@ tests/test_core.py             Testes do núcleo
 tests/test_cli.py              Testes reais da CLI por subprocesso
 docs/arquitetura.md             Decisões de arquitetura
 docs/diario-desenvolvimento.md  Registro das etapas e do TDD
-docs/postagem-forum.md          Rascunho de submissão
 AGENTS.md                      Instruções de escopo e qualidade
 Makefile                       Comandos install, test e run
 iniciar.cmd                    Facilitador local no Windows
@@ -218,7 +217,7 @@ testes, implementação, refatoração, revisão e documentação.
 | Implementação | Validações, geração e CLI | Código e fase Green |
 | Refatoração | Extração do embaralhamento | Commit e reexecução dos testes |
 | Revisão | Leitura do código e conferência de comandos | Diário e validação |
-| Documentação | README, diário e postagem | docs/ |
+| Documentação | README e diário | docs/ |
 
 A participação humana observada foi definir requisitos, escolher o tema,
 solicitar planejamento e autorizar a execução. O autor ainda deve compreender

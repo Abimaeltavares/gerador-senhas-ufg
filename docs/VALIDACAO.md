@@ -37,7 +37,6 @@ salvas em relatórios.
 - [x] Documentação da distribuição não uniforme e dos limites do MVP.
 - [x] LICENSE, README, AGENTS.md, dependências fixadas e Makefile presentes.
 - [x] Diário com resultados reais e etapas Red → Green → Refactor.
-- [x] Rascunho de fórum sem link de publicação fictício.
 - [x] Histórico real de oito commits significativos em Conventional Commits.
 - [x] Tag local v1.0.0 preparada após as verificações.
 - [x] Ambiente virtual, ferramentas, caches e arquivos sensíveis excluídos do Git.
@@ -50,9 +49,7 @@ salvas em relatórios.
   README renderizado confirmado pelo HTML servido pelo GitHub, com tabelas.
 - [x] GitHub Actions: quatro jobs aprovados, Windows/Ubuntu e Python 3.11/3.12.
   [Evidência](https://github.com/Abimaeltavares/gerador-senhas-ufg/actions/runs/38488310328).
-- [x] Link real preenchido no rascunho do fórum.
 - [ ] Revisão humana e compreensão do código pelo autor.
-- [ ] Autor submeter no fórum e comentar o trabalho de um colega.
 
 Não houve teste local em Linux nem em outras versões de Python.
 Não foram produzidas métricas de produtividade, análise de entropia ou

@@ -13,5 +13,5 @@
 - Manter diário de decisões, comandos, resultados e participação humana, sem métricas inventadas.
 - Commits reais e significativos em Conventional Commits. Não fabricar histórico ou resultados.
 - Não apagar arquivos existentes nem executar ações destrutivas sem autorização.
-- Preparar documentação, postagem do fórum e tag local v1.0.0 após validação.
+- Preparar documentação e tag local v1.0.0 após validação.
 - Pedir aprovação do autor antes de publicar no GitHub ou criar uma Release.
